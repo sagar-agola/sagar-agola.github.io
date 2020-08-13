@@ -1,19 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175314174-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-
-		gtag('config', 'UA-175314174-1');
-	</script>
-
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+	<meta name="description"
+		content="I am Sagar Agola, junior software engineer. I enjoy creating cool programming stuff im my free time.">
+	<meta name="keywords" content="sagar, agola, sagar-agola, software engineer, .net, .net core">
 
 	<title>Sagar Agola</title>
 
@@ -24,7 +17,17 @@
 		rel="stylesheet" />
 
 	<link rel="stylesheet" type="text/css" href="default.css" />
-	<link id="theme-style" rel="stylesheet" type="text/css" href="" />
+	<link id="theme-style" rel="stylesheet" type="text/css" href="default.css" />
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175314174-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-175314174-1');
+	</script>
 </head>
 
 <body>
@@ -52,7 +55,7 @@
 				</div>
 
 				<div class="left-column">
-					<img id="profile_pic" src="images/sagar_me.jpg">
+					<img id="profile_pic" src="images/sagar_me.jpg" alt="Sagar Agola profile pic">
 					<h5 style="text-align: center;line-height: 0;">Personalize Theme</h5>
 					<div id="theme-options-wrapper">
 						<div>
@@ -116,7 +119,7 @@
 					</div>
 				</div>
 				<div class="social-links">
-					<img id="social_img" src="images/follow.png">
+					<img id="social_img" src="images/follow.png" alt="Social image">
 					<h3>Find me on Github & LinkedIn</h3>
 					<a target="_blank" href="https://github.com/sagar-agola">Github: sagar-agola</a>
 					<br>
@@ -134,7 +137,8 @@
 				<div>
 					<div class="post">
 						<div class="post-image">
-							<img class="thumbnail" src="images/morden_webapplication.png">
+							<img class="thumbnail" src="images/morden_webapplication.png"
+								alt="Online Parking thumbnail">
 						</div>
 						<div class="post-preview">
 							<h6 class="post-title">Online Parking</h6>
@@ -147,7 +151,7 @@
 				<div>
 					<div class="post">
 						<div class="post-image">
-							<img class="thumbnail" src="images/bug_tracking.png">
+							<img class="thumbnail" src="images/bug_tracking.png" alt="Bug Tracking thumbnail">
 						</div>
 						<div class="post-preview">
 							<h6 class="post-title">Bug Tracking System</h6>
@@ -160,7 +164,7 @@
 				<div>
 					<div class="post">
 						<div class="post-image">
-							<img class="thumbnail" src="images/node_api.jpg">
+							<img class="thumbnail" src="images/node_api.jpg" alt="Node Api thumbnail">
 						</div>
 						<div class="post-preview">
 							<h6 class="post-title">Node JS Api</h6>
@@ -179,30 +183,27 @@
 
 	<section class="s2">
 		<div class="main-container">
-			<a href=""></a>
 			<h3 style="text-align: center;">Get In Touch</h3>
 
 			<form id="contact-form">
-				<a name="contact"></a>
+				<label for="name">Name</label>
+				<input id="name" class="input-field" type="text" name="name">
 
-				<label>Name</label>
-				<input class="input-field" type="text" name="name">
+				<label for="subject">Subject</label>
+				<input id="subject" class="input-field" type="text" name="subject">
 
-				<label>Subject</label>
-				<input class="input-field" type="text" name="subject">
+				<label for="email">Email</label>
+				<input id="email" class="input-field" type="text" name="email">
 
-				<label>Email</label>
-				<input class="input-field" type="text" name="email">
-
-				<label>Message</label>
-				<textarea class="input-field" name="message"></textarea>
+				<label for="message">Message</label>
+				<textarea id="message" class="input-field" name="message"></textarea>
 
 				<input id="submit-btn" type="submit" value="Send">
 			</form>
 		</div>
 	</section>
 
-	<script type="text/javascript" src="script.js"></script>
+	<script src="script.js"></script>
 </body>
 
 </html>
