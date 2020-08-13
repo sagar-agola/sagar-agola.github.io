@@ -1,0 +1,14 @@
+.img-container {
+    max-width: 720px;
+    margin: 1rem 0;
+    padding: 0 10px;
+}
+
+.img-container img {
+    border:2px solid var(--borderColor);
+    width: 100%;
+}
+
+.project-discription {
+    text-align: justify;
+}
